@@ -8,7 +8,7 @@ import DashboardPage from './pages/DashboardPage';
 import PrivateRoute from './components/PrivateRoute';
 import ExerciseProfilePage from './pages/ExerciseProfilePage';
 import ExerciseRecommendationPage from './pages/ExerciseRecommendationPage';
-
+import MediaCapturePage from './pages/MediaCapturePage';
 // PUBLIC_INTERFACE
 function App() {
   const [theme, setTheme] = useState('light');
@@ -53,6 +53,11 @@ function App() {
               <Route path="/exercise-recommend" element={
                 <PrivateRoute>
                   <ExerciseRecommendationPage />
+                </PrivateRoute>
+              } />
+              <Route path="/proof" element={
+                <PrivateRoute>
+                  <MediaCapturePage />
                 </PrivateRoute>
               } />
               {/* Future: more protected/landing pages */}
