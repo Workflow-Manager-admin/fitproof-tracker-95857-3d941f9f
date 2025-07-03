@@ -50,9 +50,23 @@ const DashboardPage = () => {
             color: "#fff",
             textDecoration: "none",
             fontWeight: "bold",
+            marginRight: "1rem"
           }}
         >
           Upload Workout Proof
+        </a>
+        <a
+          href="/history"
+          style={{
+            padding: "12px 24px",
+            background: "#ff9000",
+            borderRadius: "8px",
+            color: "#fff",
+            textDecoration: "none",
+            fontWeight: "bold"
+          }}
+        >
+          Workout History
         </a>
       </div>
       {/* Future: add nav to exercise rec, proof, etc. */}
