@@ -6,6 +6,8 @@ import RegisterPage from './pages/RegisterPage';
 import LoginPage from './pages/LoginPage';
 import DashboardPage from './pages/DashboardPage';
 import PrivateRoute from './components/PrivateRoute';
+import ExerciseProfilePage from './pages/ExerciseProfilePage';
+import ExerciseRecommendationPage from './pages/ExerciseRecommendationPage';
 
 // PUBLIC_INTERFACE
 function App() {
@@ -41,6 +43,16 @@ function App() {
               <Route path="/dashboard" element={
                 <PrivateRoute>
                   <DashboardPage />
+                </PrivateRoute>
+              } />
+              <Route path="/profile" element={
+                <PrivateRoute>
+                  <ExerciseProfilePage />
+                </PrivateRoute>
+              } />
+              <Route path="/exercise-recommend" element={
+                <PrivateRoute>
+                  <ExerciseRecommendationPage />
                 </PrivateRoute>
               } />
               {/* Future: more protected/landing pages */}

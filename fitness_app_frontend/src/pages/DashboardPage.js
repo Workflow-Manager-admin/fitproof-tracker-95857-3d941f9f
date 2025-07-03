@@ -12,6 +12,35 @@ const DashboardPage = () => {
     <div className="dashboard-container">
       <h1>Welcome, {currentUser?.sub || "User"}!</h1>
       <button onClick={logout}>Logout</button>
+      <div style={{ marginTop: "2rem" }}>
+        <a
+          href="/profile"
+          style={{
+            padding: "12px 24px",
+            background: "#007bff",
+            borderRadius: "8px",
+            color: "#fff",
+            marginRight: "1rem",
+            textDecoration: "none",
+            fontWeight: "bold",
+          }}
+        >
+          Enter Profile (Height/Weight)
+        </a>
+        <a
+          href="/exercise-recommend"
+          style={{
+            padding: "12px 24px",
+            background: "#025fff",
+            borderRadius: "8px",
+            color: "#fff",
+            textDecoration: "none",
+            fontWeight: "bold",
+          }}
+        >
+          Get Exercise Recommendations
+        </a>
+      </div>
       {/* Future: add nav to exercise rec, proof, etc. */}
     </div>
   );
